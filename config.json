@@ -1,0 +1,15 @@
+{
+    "arrow_size": 150,
+    "trial_number": 5,
+    "block_number": 4,
+    "ft_number": 4,
+    "epoch_duration": 6,
+    "iti_duration": 6,
+    "tmin": 0.5,
+    "tmax": 3.5,
+    "model_name_oneclass": "CSP",
+    "model_name1": "MDM",
+    "model_name2": "kernelTS",
+    "filtering": [8, 45],
+    "electrodes": [8, 4, 9, 12, 13, 14, 18, 24, 19],
+}
