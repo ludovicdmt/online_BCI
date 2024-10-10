@@ -18,25 +18,43 @@ Developed by [Ludovic DARMET](http://www.isc.cnrs.fr/index.rvt?language=en&membe
 ## Dependencies
 
 - [Pygame](https://www.pygame.org/news)
+- [PyQT5](https://doc.qt.io/)
+- [Pyriemann](https://pyriemann.readthedocs.io/en/latest/)
 - [PyACQ](https://github.com/pyacq/pyacq/tree/master)
 - [pylsl](https://github.com/chkothe/pylsl)
 - [Sklearn](https://scikit-learn.org/stable/install.html)
+- [MNE](https://github.com/mne-tools/mne-python)
 
 ## Installation
 👩‍💻
-Clone the repo:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ludovicdmt/online_BCI.git
+   cd online_BCI
+   ```
 
-```bash
-git clone https://github.com/ludovicdmt/online_BCI.git
-```
-Then using `Ananconda Prompt` (terminal from Anaconda):
-```bash
-cd ${INSTALL_PATH}
-conda env create -f MIBCI.yml
-conda activate MIBCI
-pip install -e .
-```
-This will install the module in editable mode. That means that any changes you do to the code will be updated so you don't have to re-install every time.
+2. Create and activate the Conda environment:
+   ```bash
+   conda env create -f BCIMI.yml
+   conda activate BCIMI
+   ```
+
+3. Install the module in editable mode:
+   ```bash
+   pip install -e .
+   ```
+
+4. Install PyACQ:
+   ```bash
+   pip install git+https://github.com/pyacq/pyacq.git
+   ```
+
+5. Install PyACQ_ext:
+   ```bash
+   pip install git+https://gitlab.com/ludovicdmt/pyacq-ext-mi.git
+   ```
+
+Note: Changes to the code will be reflected immediately due to the editable mode installation.
 
 ## Example Usage
 🗜️
